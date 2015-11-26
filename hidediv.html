@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script language=javascript type='text/javascript'> 
+function hidediv() { 
+if (document.getElementById) { // DOM3 = IE5, NS6 
+document.getElementById('hideShow').style.visibility = 'hidden'; 
+} 
+else { 
+if (document.layers) { // Netscape 4 
+document.hideShow.visibility = 'hidden'; 
+} 
+else { // IE 4 
+document.all.hideShow.style.visibility = 'hidden'; 
+} 
+} 
+}
+
+function showdiv() { 
+if (document.getElementById) { // DOM3 = IE5, NS6 
+document.getElementById('hideShow').style.visibility = 'visible'; 
+} 
+else { 
+if (document.layers) { // Netscape 4 
+document.hideShow.visibility = 'visible'; 
+} 
+else { // IE 4 
+document.all.hideShow.style.visibility = 'visible'; 
+} 
+} 
+} 
+</script>
+</head>
+<body onload="javascript:hidediv()">
+<a href="javascript:showdiv()">show div</a>
+<div id="hideShow"> 
+My content 
+</div>
+
+<a href="javascript:hidediv()">hide div</a>
+
+
+
+</body>
+</html>
