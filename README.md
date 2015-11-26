@@ -1,4 +1,4 @@
-# linked-pachube
+# What
 
 Generate a RDF description for single sensor nodes.
 The returned description is split into sections according to the dependency of the included information, and "where" to store it is suggested. This service is available through either the manually fillable form here
